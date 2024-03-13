@@ -5,6 +5,9 @@ on:
     tags:
       - 'v*.*'
 
+permissions:
+  contents: write
+
 env:
   CARGO_TERM_COLOR: always
 
@@ -13,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4.1.1
       - name: Compile Rust project
         run: cargo build --release --verbose
       - name: Create Release
