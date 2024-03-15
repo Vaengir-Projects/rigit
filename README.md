@@ -7,6 +7,7 @@ Tool which let's you perform a git actions on multiple repositories.
 - status: displays the status of all repositories under the specified directory
   - allows -v --verbose flag to display complete git status
 - fetch: pull the remote changes of all repositories under the specified directory but don't merge/rebase automatically.
+- --generate <shell>: create code to add shell completion for the provided shell
 
 ## WIP
 - pull: pull the remote changes of all repositories under the specified directory and merge/rebase them.

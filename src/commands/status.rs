@@ -32,13 +32,12 @@ pub(crate) fn run_status(repos: Repos, verbose: bool) -> Result<()> {
 impl Statuses {
     /// Print function to display results clearly
     fn print(&self, verbose: bool) {
-        println!("");
         for status in &self.statuses {
             match &status.status {
                 Ok(r) => {
-                    println!("{}: {}", status.directory.name, " ".red());
+                    println!("\n{}: {}", status.directory.name, " ".red());
                     if verbose {
-                        let output = r[0].split("\n");
+                        let output = r[0].split('\n');
                         for line in output {
                             println!("  {}", line);
                         }
@@ -47,11 +46,9 @@ impl Statuses {
                             println!("  {}", line);
                         }
                     }
-                    println!("");
                 }
                 Err(_) => {
-                    println!("{}: {}", status.directory.name, " ".green());
-                    println!("");
+                    println!("\n{}: {}", status.directory.name, " ".green());
                 }
             };
         }

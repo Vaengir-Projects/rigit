@@ -11,5 +11,6 @@ license = "MIT"
 
 [dependencies]
 anyhow = "1.0.71"
-clap = { version = "4.3.8", features = ["derive"] }
+clap = { version = "4.3.8", features = ["cargo"] }
+clap_complete = "4.5.1"
 colored = "2.0.0"

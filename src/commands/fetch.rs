@@ -16,9 +16,8 @@ struct Fetched {
 impl Fetched {
     /// Print function to display results clearly
     fn print(&self) {
-        println!("");
         if self.fetched.is_empty() {
-            println!("Nothing to fetch.")
+            println!("\nNothing to fetch.")
         } else {
             println!("Remote changes fetched for:\n");
             for fetched in &self.fetched {
