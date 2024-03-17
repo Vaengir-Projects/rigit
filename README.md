@@ -1,16 +1,29 @@
 # rigit
 Tool which let's you perform a git actions on multiple repositories.
 
-## Currently working commands:
-- -h --help: display help message
-- -V --version: displays the current release version
-- status: displays the status of all repositories under the specified directory
-  - allows -v --verbose flag to display complete git status
-- fetch: pull the remote changes of all repositories under the specified directory but don't merge/rebase automatically.
-- --generate <shell>: create code to add shell completion for the provided shell
+## Installation
+```bash
+cargo install rigit
+```
 
-## WIP
+## Usage
+```
+rigit [OPTIONS] [COMMAND]
+
+Commands:
+  status  Run git status on all repos in the following directory
+      -v, --verbose  Print complete git status
+  fetch   Run git fetch on all repos in the following directory
+  help    Print this message or the help of the given subcommand(s)
+
+Options:
+  -G, --generate <generator>  [possible values: bash, elvish, fish, powershell, zsh]
+  -h, --help                  Print help
+  -V, --version               Print version
+```
+
+### WIP (Could take some time because the implemented commands are the main ones I wanted this tool for)
 - pull: pull the remote changes of all repositories under the specified directory and merge/rebase them.
 
-## Planned features
+### Planned features
 - push: push the local changes of all repositories under the specified directory to the remote repositories.

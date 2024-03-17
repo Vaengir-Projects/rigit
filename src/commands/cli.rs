@@ -32,6 +32,7 @@ pub(crate) fn build_cli() -> Command {
                 .required(true)))
         .arg(
             Arg::new("generator")
+                .short('G')
                 .long("generate")
                 .action(ArgAction::Set)
                 .value_parser(value_parser!(Shell)),
