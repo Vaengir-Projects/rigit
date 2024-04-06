@@ -1,6 +1,6 @@
-[![Crates.io](https://img.shields.io/crates/v/faktory.svg)](https://crates.io/crates/rigit)
-[![Documentation](https://docs.rs/faktory/badge.svg)](https://docs.rs/rigit/)
-[![Codecov](https://codecov.io/github/jonhoo/faktory-rs/coverage.svg?branch=master)](https://app.codecov.io/gh/Vaengir-Projects/rigit)
+[![Crates.io](https://img.shields.io/crates/v/rigit.svg)](https://crates.io/crates/rigit)
+[![Documentation](https://docs.rs/rigit/badge.svg)](https://docs.rs/rigit/)
+[![Codecov](https://codecov.io/github/Vaengir-Projects/rigit/coverage.svg?branch=main)](https://app.codecov.io/gh/Vaengir-Projects/rigit)
 [![dependency status](https://deps.rs/repo/github/Vaengir-Projects/rigit/status.svg)](https://deps.rs/repo/github/Vaengir-Projects/rigit)
 
 # rigit
