@@ -1,11 +1,20 @@
 name: Ntfy-Notification
 
 on:
-  check_suite:
-    types:
-      - completed
+  push:
+    branches: [main]
+  pull_request:
 
 jobs:
+  enforce-all-checks:
+    runs-on: ubuntu-latest
+    permissions:
+      checks: read
+    steps:
+      - name: GitHub Checks
+        uses: poseidon/wait-for-status-checks@v0.3.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
   on-success:
     runs-on: ubuntu-latest
     steps:
