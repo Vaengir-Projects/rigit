@@ -1,3 +1,8 @@
+[![Crates.io](https://img.shields.io/crates/v/faktory.svg)](https://crates.io/crates/rigit)
+[![Documentation](https://docs.rs/faktory/badge.svg)](https://docs.rs/rigit/)
+[![Codecov](https://codecov.io/github/jonhoo/faktory-rs/coverage.svg?branch=master)](https://app.codecov.io/gh/Vaengir-Projects/rigit)
+[![dependency status](https://deps.rs/repo/github/Vaengir-Projects/rigit/status.svg)](https://deps.rs/repo/github/Vaengir-Projects/rigit)
+
 # rigit
 Tool which let's you perform a git actions on multiple repositories.
 
