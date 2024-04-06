@@ -2,8 +2,7 @@ name: Ntfy-Notification
 
 on:
   check_suite:
-    types:
-      - completed
+    types: [completed]
 
 jobs:
   on-success:
