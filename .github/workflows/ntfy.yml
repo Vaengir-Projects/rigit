@@ -15,7 +15,7 @@ jobs:
           -u ${{ secrets.NTFY_CRED }} \
           -H "Title: Check suite completed successfully" \
           -H "Content-Type: text/plain" \
-          -d $'Repo: ${{ github.repository }}\nPR: ${{ github.event.check_suite.pull_requests }}\nCommit: ${{ github.sha }}\nRef: ${{ github.ref }}\nStatus: ${{ github.event.check_suite.conclusion }}' \
+          -d $'Repo: ${{ github.repository }}\nURL: ${{ github.event.check_suite.check_runs_url }}\nCommit: ${{ github.sha }}\nRef: ${{ github.ref }}\nStatus: ${{ github.event.check_suite.conclusion }}' \
           ${{ secrets.NTFY_URL }}
   on-failure:
     if: ${{ github.event.check_suite.conclusion == 'failure' }}
@@ -27,5 +27,5 @@ jobs:
           -u ${{ secrets.NTFY_CRED }} \
           -H "Title: Rigit Compilation failed" \
           -H "Content-Type: text/plain" \
-          -d $'Repo: ${{ github.repository }}\nPR: ${{ github.event.check_suite.pull_requests.number }}\nCommit: ${{ github.sha }}\nRef: ${{ github.ref }}\nStatus: ${{ github.event.check_suite.conclusion }}' \
+          -d $'Repo: ${{ github.repository }}\nURL: ${{ github.event.check_suite.check_runs_url }}\nCommit: ${{ github.sha }}\nRef: ${{ github.ref }}\nStatus: ${{ github.event.check_suite.conclusion }}' \
           ${{ secrets.NTFY_URL }}
