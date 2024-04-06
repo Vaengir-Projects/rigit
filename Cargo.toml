@@ -4,6 +4,7 @@ authors = ["Væñgír"]
 version = "0.2.0"
 description = "Cli-tool which lets you perform a git action on multiple repositories."
 edition = "2021"
+rust-version = "1.74" # MSRV because of clap
 repository = "https://github.com/Vaengir-Projects/rigit.git"
 license = "MIT"
 
