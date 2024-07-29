@@ -1,3 +1,4 @@
+[![Build Rust project](https://github.com/Vaengir-Projects/rigit/actions/workflows/compile.yml/badge.svg)](https://github.com/Vaengir-Projects/rigit/actions/workflows/compile.yml)
 [![Crates.io](https://img.shields.io/crates/v/rigit.svg)](https://crates.io/crates/rigit)
 [![Documentation](https://docs.rs/rigit/badge.svg)](https://docs.rs/rigit/)
 [![Codecov](https://codecov.io/github/Vaengir-Projects/rigit/coverage.svg?branch=main)](https://app.codecov.io/gh/Vaengir-Projects/rigit)
