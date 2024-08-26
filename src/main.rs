@@ -6,13 +6,16 @@
 pub(crate) mod commands;
 pub(crate) mod util;
 
-use crate::commands::cli::print_completions;
-use crate::commands::fetch::run_fetch;
-use crate::commands::status::run_status;
-use crate::util::repos::Repos;
+use crate::{
+    commands::{
+        cli::{build_cli, print_completions},
+        fetch::run_fetch,
+        status::run_status,
+    },
+    util::repos::Repos,
+};
 use anyhow::{anyhow, Context, Result};
 use clap_complete::Shell;
-use commands::cli::build_cli;
 use std::path::Path;
 
 fn main() -> Result<()> {
